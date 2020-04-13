@@ -156,6 +156,8 @@ section {
   display: flex;
 }
 
+
+
 .artists,
 .artists * {
   box-sizing: border-box;
@@ -294,3 +296,9 @@ section {
 .artists:nth-child(6){
   margin-top: 250px;
 }
+
+
+
+
+
+
