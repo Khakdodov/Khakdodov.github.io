@@ -193,7 +193,7 @@ section {
   transition: all 0.4s ease-in-out 0s;
 }
 .artists:hover .artists-layer_top,
-.zornet_ru_lisrum.active .zornet_ru_lisrum-layer_top {
+.artists.active .artists-layer_top {
   opacity: 1;
 }
 .artists .artists-text {
