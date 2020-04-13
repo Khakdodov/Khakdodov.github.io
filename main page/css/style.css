@@ -150,61 +150,88 @@ section {
   }
 }
 
-
-
-#artists{
-     -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-    
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#artists img{
-    margin: 0;
-    width: 273px;
+.artists,
+.artists * {
+  box-sizing: border-box;
+}
+.artists {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.artists img {
+    width:273px;
     height: 385px;
-    border-style: solid;
-    border-color: white;
-    border-width:2px;
-    box-shadow: 0 0 0 5px black;
-    background-attachment: fixed;
+    max-width: 100%;
+}
+.artists-layer_bottom {
+  display: block;
+}
+.artists .artists-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.artists:hover .artists-layer_top,
+.zornet_ru_lisrum.active .zornet_ru_lisrum-layer_top {
+  opacity: 1;
+}
+.artists .artists-text {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.artists .artists-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179);
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+.artists.active .artists-text_mobile {
+  display: block;
 }
 
-
-#artists .art1{
-    padding-top: 220px;
-    padding-left: 27px;
-    
+.artists .artists-layer_scale {
+  border-radius: 50%;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
-
-#artists .art6{
-    padding-top: 220px;
-    padding-right: 27px;
+.artists:hover .artists-layer_scale,
+.artists.active .artists-layer_scale {
+  border-radius: 0%;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
-
-#artists .art2{
-    padding-top: 160px;
-}
-#artists .art5{
-    padding-top: 160px;
-}
-
-#artists .art3{
- padding-top: 90px;
-}
-
-#artists .art4{
- padding-top: 90px;
-}
-
-
-
-
-
- 
-
 
