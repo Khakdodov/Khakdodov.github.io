@@ -184,8 +184,8 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 273px;
+  height: 385px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 15px;
@@ -193,6 +193,8 @@ section {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+    
+
 }
 .artists:hover .artists-layer_top,
 .artists.active .artists-layer_top {
@@ -253,7 +255,6 @@ section {
 .block__inner{
   display: flex;
   justify-content: space-between;
-  
 }
 
 .artists{
@@ -261,15 +262,17 @@ section {
   border: 5px solid #000000;
   height: 385px;
   width: 273px;
-  background-color: black;
+ 
 }
 .artists img{
   height:100%;
   width: 100%;
   max-width:100%;
-  transition: opacity 0.3s ease;
-    border: 3px solid #ffffff;
+ border: 3px solid #ffffff;
 }
+
+
+
 
 .artists img:hover{
   opacity: 0.3;
