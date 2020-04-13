@@ -124,7 +124,7 @@ section {
   background-color: #262626;
 }
 #header .center .bottom {
-  margin-top: 15px;
+  margin-top: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +151,20 @@ section {
 }
 
 
+
+#artists{
+     -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+    
+}
+
 #artists img{
+    margin: 0;
     width: 273px;
     height: 385px;
     border-style: solid;
@@ -162,38 +175,36 @@ section {
 }
 
 
-#artists{
- -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
- #artists .art1{
-    padding-top: 319px;
+#artists .art1{
+    padding-top: 220px;
     padding-left: 27px;
-    display: flex;
+    
 }
 
 #artists .art6{
-    padding-top: 319px;
+    padding-top: 220px;
     padding-right: 27px;
 }
 
 #artists .art2{
-    padding-top: 239px;
+    padding-top: 160px;
 }
 #artists .art5{
-    padding-top: 239px;
+    padding-top: 160px;
 }
 
 #artists .art3{
- padding-top: 144px;
+ padding-top: 90px;
 }
 
 #artists .art4{
- padding-top: 144px;
+ padding-top: 90px;
 }
+
+
+
+
+
+ 
+
+
