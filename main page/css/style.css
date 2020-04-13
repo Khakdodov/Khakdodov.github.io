@@ -49,6 +49,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+    
 }
 body .fullscreen {
   z-index: -2;
@@ -150,29 +151,28 @@ section {
 }
 
 
+#artists img{
+    width: 273px;
+    height: 385px;
+    border-style: solid;
+    border-color: white;
+    border-width:2px;
+    box-shadow: 0 0 0 5px black;
+    background-attachment: fixed;
+}
+
+
 #artists{
-  -webkit-box-orient: horizontal;
+ -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-    
 }
 
-#artists img{
-    width:273px;
-    height: 385px;
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    box-shadow: 0 0 0 5px black;
-                
-
-}
-
-#artists .art1{
+ #artists .art1{
     padding-top: 319px;
     padding-left: 27px;
     display: flex;
@@ -197,11 +197,3 @@ section {
 #artists .art4{
  padding-top: 144px;
 }
-
-
-
-
-
-
-
-
