@@ -231,6 +231,8 @@ section {
 
 
 
+
+
 *
 {
 	padding: 0;
@@ -293,6 +295,67 @@ section {
   margin-bottom: -5px;
 
 }
+
+*
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.slider__inner
+{
+  max-width: 1140px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.title
+{
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.item
+{
+  background-color: #ffffff;
+  border:  10px double #000000;
+}
+
+.item__img
+{
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.item__header
+{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item__title
+{
+  margin-left: 20px;
+}
+
+.item__inner
+{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #ffffff;
+  padding: 20px;
+  background-color: grey;
+}
+
+
+
 
 *
 {
