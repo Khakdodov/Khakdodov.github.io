@@ -167,7 +167,7 @@ section {
   
 }
 .artists img {
-    width:286px;
+    width:273px;
     height: 385px;
     max-width: 100%;
 }
@@ -181,7 +181,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 286px;
+  width: 273px;
   height: 385px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -301,7 +301,7 @@ section {
 .text_about {
     text-align: center;
     font-size: 30px;
-    color: black;
+    color: #323131;
     font-weight: 500;
     padding-top: 15px;
     padding-bottom: 30px;
@@ -319,7 +319,7 @@ section {
 #slider_box > ul > li {
     float: left;
     display: block;
-    
+    height: 150px;
 }
 
 #slider_box > ul {
@@ -332,13 +332,11 @@ section {
     position: relative;
     left: 30px;
     justify-content: space-between;
-    
 }
 
 #left_nav {
     float: left;
     padding-top: 14px;
-    
 }
 
 #nav_slider > div {
@@ -349,7 +347,7 @@ section {
 #right_nav {
     float: right;
     padding-top: 14px;
-    
+  
 }
 
 #nav_slider {
@@ -367,13 +365,10 @@ section {
 }
 
 #slider img {
-   
     height: 100%;
     width: 100%;
-}
-
     
-
+}
 
 
 
