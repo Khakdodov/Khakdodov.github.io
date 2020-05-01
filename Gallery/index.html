@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" >
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Responsive Image Gallery</h1>
+		
+	</header>
+
+	<div class="container">
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/1.jpg"><img src="images/1.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/2.jpg"><img src="images/2.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/3.jpg"><img src="images/3.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/4.jpg"><img src="images/4.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/5.jpg"><img src="images/5.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/6.jpg"><img src="images/6.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/7.jpg"><img src="images/7.jpg"></a>
+		</div>
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="images/8.jpg"><img src="images/8.jpg"></a>
+		</div>
+	
+			
+	</div>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script>
+    $('[data-fancybox]').fancybox({
+    animationEffect: "slide",
+   
+    loop: true,
+    buttons: [
+    "zoom",
+    "share",
+    "slideShow",
+    "fullScreen",
+    "download",
+    "thumbs",
+    "close"
+  ],
+      })
+   </script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
