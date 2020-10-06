@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 400px;
+        }
+        * {box-sizing: border-box;}
+        .transform-border {
+        position: relative;
+        max-width: 500px;
+        margin: 50px auto;
+        transform: perspective(3000px) rotateY(29deg);
+}
+        .transform-border img {
+          display: block;
+          width: 100%;
+          box-shadow: -12px 11px 1px #f2f2f2;
+}
+        .transform-border:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: -22px;
+          top: 22px;
+          background: #cccccc;
+          z-index: -1;
+}
+    </style>
+</head>
+<body bgcolor="#e3e5f8" text="#FF0055">
+<h1>Монки Д. Луффи</h1>
+<p>Монки Д. Луффи, также известный как «Соломенная Шляпа Луффи» или просто «Соломенная Шляпа» («Мугивара»),— главный герой аниме и манги One Piece. Также он основатель и капитан всё более печально известных и могущественных Пиратов Соломенной Шляпы, и, как капитан своей команды, он является первым членом, а также один из четырёх лучших бойцов. Его мечта — стать Королём Пиратов, найдя легендарное сокровище Ван Пис, оставленное покойным Королём Пиратов — Гол Д. Роджером. Он верит, что став Королём Пиратов, он станет самым свободным человеком в мире. Он съел Дьявольский плод Гому Гому но Ми, обретя возможность растягивать своё тело подобно резине. После его вторжения в Тотто Лэнд и действий против Ёнко Большая Мамочка он в настоящее время считается мировой прессой Пятым Императором. </p>
+
+    <div class="transform-border">
+  <img src="images/mugiwara.jpg">
+</div>
+</body>
+</html>

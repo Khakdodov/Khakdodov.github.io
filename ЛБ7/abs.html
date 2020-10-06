@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <style>
+         img{
+            height: 300px;
+            width: 400px;
+        }
+        * {box-sizing: border-box;}
+        .transform-border {
+        position: relative;
+        max-width: 400px;
+        margin: 50px auto;
+        transform: perspective(3000px) rotateY(29deg);
+}
+    .transform-border img {
+      display: block;
+      width: 100%;
+      box-shadow: -12px 11px 1px #f2f2f2;
+}
+    .transform-border:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -22px;
+      top: 22px;
+      background: #cccccc;
+      z-index: -1;
+}
+    </style>
+</head>
+<body bgcolor="#e3e5f8" text="#FF0055">
+<h1>Ророноа Зорро</h1>
+<p>Ророноа Зоро— пират, бывший охотник за головами и один из главных протагонистов One Piece.
+Ророноа Зоро был первым, кто присоединился к Пиратам Соломенной Шляпы и является одним из четырёх сильнейших членов команды, а его мечта — стать величайшим мечником в мире. Из за его огромной силы и сдержанности, разительно отличающейся от легкомысленного поведения Луффи, многие зачастую принимали его за капитана команды или за первого помощника.Также, он один из пиратов, которых назвали «Худшее Поколение». Его текущая награда составляет BeliSymbol320 000 000.</p>
+<div class="transform-border">
+  <img src="images/zorro.jpg">
+</div>
+    
+</body>
+</html>
