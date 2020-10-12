@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+/* для колонок и их заголовков */
+ #header1, #header2, #header3, #col1, #col2, #col3 { 
+     width: 250px; /* Ширина колонок */
+    padding: 5px; /* Поля вокруг текста */
+    margin-left: 5px; /* Отступ слева */
+    margin-top: 2px; /* Отступ сверху */
+    float: left; /* Состыковка колонок по горизонтали */
+    border: 1px solid black; /* Рамка вокруг слоя */
+    font-family: Verdana, Arial, sans-serif; /* Рубленый шрифт */
+    font-weight: bold; /* Жирное начертание текста заголовка */
+    font-size: 80%; /* Размер шрифта */
+    color: black; /* Цвет текста заголовка */
+   }
+   /* для колонок */
+   #col1, #col2, #col3 { 
+    font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
+    font-size: 100%; /* Размер шрифта */
+    font-weight: normal; /* Нормальное начертание */
+    color: black; /* Цвет текста */
+   } 
+ 
+   /* Цвет фона каждого слоя */
+   #header1 { background: #FFC0CB; }
+   #header2 { background: #FFFF00; }
+   #header3 { background: #CC99FE; } 
+   #col1 { background: #98FF98; }
+   #col2 { background: #CC99FE; }
+   #col3 { background: #FFC0CB; }
+ 
+   .container { 
+     clear: both;  /* Отменяет действие float */ 
+   }   
+</style>
+</head>
+<body>
+    <div class="container">
+    <div id="header1">Омар Хайям</div>
+    <div id="header2">Джордж Карлин</div>
+    <div id="header3">Марк Твен</div>
+  </div>
+  <div class="container">
+    <div id="col1">
+        <p>Не смешно ли весь век по копейке копить, <span style="color:red">Если вечную жизнь все равно не купить?</span> Эту жизнь тебе дали, мой милый, на время, — Постарайся же времени не упустить!</p>
+	</div>
+    <div id="col2">
+	<p>В жизни все относительно, и вы не сможете переживать только взлеты, без падений. Каждый рождается в нужное время и в нужном месте. Проблема лишь в том, чтобы распознать возможность, когда она появляется в поле зрения, и до того момента, как она исчезнет.</p>
+	</div>
+    <div id="col3">
+	<p>Золотое правило жизни: не переживай из-за того, что ты не в силах изменить, просто прими ситуацию такой, какая она есть, ведь мы не пытаемся изменить погоду, мы просто одеваемся по погоде. </p>
+	</div>
+  </div>
+  
+</body>
+</html>
