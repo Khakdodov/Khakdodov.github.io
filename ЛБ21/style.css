@@ -1,0 +1,177 @@
+body{
+    background-color: bisque;
+}
+
+.semicolon{
+    display: inline-block;
+    width: 20px;
+    margin: auto -15px;
+}
+
+.number {
+    display: inline-block;
+    width: 100px;
+    margin: auto
+}
+.section__form {
+    height: 100vh;
+    background: url(ava.gif) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.button__popup {
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Goldman', cursive;
+    transition: all .2s linear;
+}
+
+.button__popup:focus{
+    outline: none;
+}
+
+.button__popup:hover {
+    background-color: #fff;
+    color: #373737;
+}
+
+#prompt-form {
+  display: inline-block;
+  padding: 5px 5px 5px 70px;
+  width: 200px;
+  border: 1px solid black;
+  background: white url(https://en.js.cx/clipart/prompt.png) no-repeat left 5px;
+  vertical-align: middle;
+}
+
+#prompt-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#prompt-form-container:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+#cover-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.3;
+}
+
+#prompt-form input[name="text"] {
+  display: block;
+  margin: 5px;
+  width: 180px;
+}
+
+.main {
+    background-color: #ccc;
+    width: 400px;
+    height: 180px;
+    margin: 100px auto;
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.badge{ 
+    width: 140px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e66357;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 70px);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+.clock {
+    background-color: #ebebeb;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.semicolon{
+    display: inline-block;
+    width: 20px;
+    margin: auto -15px;
+}
+
+.number {
+    display: inline-block;
+    width: 100px;
+    margin: auto
+}
+
+ .text {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: all 0.2s linear;
+  }
+
+.text:hover {
+    color: lavenderblush;
+    background-color: hotpink;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+.text1 {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: all 0.2s linear;
+  }
+
+.text1:hover {
+    color: lavenderblush;
+    background-color: hotpink;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
