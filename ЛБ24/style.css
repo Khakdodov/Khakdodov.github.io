@@ -1,0 +1,64 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#outside {
+  z-index: 2;
+  position: absolute;
+  background-color: #FDFEFE  ;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1.5s;
+  transform-origin: 3;
+}
+
+.open-card {
+  transform: rotateY(90deg);
+}
+
+#outside-pic {
+  width: 50%;
+  height: 50%;
+}
+
+#inside {
+ background-image: url(alone.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#inside-title {
+  color: purple;
+  font-family: cursive;
+  font-size: 45pt;
+  text-align: center;
+}
+
+
+#message {
+  color:#FF4500;
+  font-family: cursive;
+  font-style:italic;
+  font-size: 40pt;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  margin-right: 20%;
+  border-color: #F48FB1;
+  background: linear-gradient(15deg ,#F48FB1,#F48FB1);
+}
+#left-bounce{
+  text-align:left;
+  margin-top:10%;
+}
