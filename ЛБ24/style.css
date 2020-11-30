@@ -69,19 +69,3 @@ a{
     color: gold;
 }
 
-h2{
-    text-decoration: none;
-    background-color: #fff;
-    padding: 10px 20px 10px;
-    border: 2px solid black;
-    color:#FFD700;
-    font-weight: bolder;
-    font-family: 'poppins', sans-serif;
-    transition: .3s;
-}
-
-h2:hover {
-    color: #FFD700;
-    background-color: tomato;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
