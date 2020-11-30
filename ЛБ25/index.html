@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>:)</title>
+</head>
+
+
+<body>
+
+<button id="browser_version">Браузер, его версия и язык</button>
+ 
+ <FORM>
+ <br><br><br>
+<INPUT TYPE=button VALUE="Вы знаете JavaScript?"
+onClick="if(window.confirm('Знаю все')==true)
+{ document.forms[0].elements[0].value='Да'; }
+else {
+document.forms[0].elements[0].value='Нет';
+         };"></INPUT>
+</FORM>
+ 
+<p>
+   <button onclick="myFunction()">Try it</button>
+    </p>
+    <p>
+<button onclick="delayedAlert();">Show an alert box after two seconds</button>
+</p>
+<button onclick="clearAlert();">Cancel alert before it happens</button>
+
+<script>
+function myFunction() {
+  var myWindow = window.open("", "", "width=200,height=100");
+  myWindow.document.write("<p>Есть такая теория: Вселенная и время бесконечны, значит, любое событие неизбежно, даже невозможное.</p>");
+  myWindow.focus();
+}
+</script>
+   
+   
+    <script>
+    'use strict';
+    let name = prompt("Ваше имя?", "");
+    alert(name);
+      </script>
+  <script src="script.js"></script>
+
+<script> 
+var popupWin;
+function open_popup(url) {
+       if(typeof(popupWin) == "object" ) popupWin.close();
+
+       popupWin =  window.open(url, 'PopupName', 'scrollbars=no,resizable=yes, width=600,height=800,status=no,location=no,toolbar=no'); 
+       popupWin.focus();
+
+    }
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
