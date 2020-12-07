@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        
+        .menu{
+            list-style-type: none;
+        }
+        
+        .sub-menu {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+   
+}
+
+a img {
+    width: 20px;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+a img:hover {
+    transform: rotate(180deg);
+}
+        
+        
+        @keyframes scrollBackground {
+  from {
+    background-position: 50% 0;
+  }
+  to {
+    background-position: 50% 422px;
+  }
+}
+
+@-webkit-keyframes scrollBackground {
+  from {
+    background-position: 50% 0;
+  }
+  to {
+    background-position: 50% 422px;
+  }
+}
+@-moz-keyframes scrollBackground {
+  from {
+    background-position: 50% 0;
+  }
+  to {
+    background-position: 50% 422px;
+  }
+}
+@-o-keyframes scrollBackground {
+  from {
+    background-position: 50% 0;
+  }
+  to {
+    background-position: 50% 422px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.logo-wall { 
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    background: #fff url('https://jonnymorse.files.wordpress.com/2013/03/retro-sweets-repeat-pattern-blue.jpg') repeat center top;
+    overflow: hidden;
+    animation: scrollBackground 30s linear infinite;
+    -webkit-animation: scrollBackground 30s linear infinite;
+    -moz-animation: scrollBackground 30s linear infinite;
+    -o-animation: scrollBackground 30s linear infinite;
+}
+
+.logo-wall img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -51px;
+    margin-left: -51px;
+}
+        
+    </style>
+</head>
+<body>
+  
+    <div class="logo-wall" id="wall"></div>
+   
+   <ul class="menu">
+            <li class="menu-item">
+                <a href="#"><img src="tri.jpg">Сладости</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="">Торт</a>
+                    </li>
+                    <li>
+                        <a href="">Пончик</a>
+                    </li>
+                    <li>
+                        <a href="">Пирожное</a>
+                    </li>
+                    <li>
+                        <a href="">Шоколадка</a>
+                    </li>
+                    <li>
+                        <a href="">Мороженое</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+            <script>
+                 var el = document.getElementsByClassName('menu-item');
+        for (var i = 0; i < el.length; i++) {
+            el[i].addEventListener("mouseenter", showSub, false);
+            el[i].addEventListener("mouseleave", hideSub, false);
+        }
+
+        function showSub(e) {
+            if (this.children.length > 1) {
+                this.children[1].style.height = "auto";
+                this.children[1].style.overflow = "visible";
+                this.children[1].style.opacity = "1";
+            } else {
+                return false;
+            }
+        }
+
+        function hideSub(e) {
+            if (this.children.length > 1) {
+                this.children[1].style.height = "0px";
+                this.children[1].style.overflow = "hidden";
+                this.children[1].style.opacity = "0";
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
