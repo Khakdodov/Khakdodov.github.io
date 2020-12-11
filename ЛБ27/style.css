@@ -1,0 +1,183 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+
+/* General Styling*/
+
+html {
+  background: #FFE4E1;
+}
+
+body {
+  max-width: 1500px;
+  margin: 1em auto;
+  padding: 1em 1em;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  border-radius: 4px;
+  background: #d4d8d6;
+  box-shadow: 0 0 4px 2px hsla(0, 0%, 100%, 0.5);
+}
+
+header {
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: Comfortaa, sans-serif;
+  font-size: 5em;
+}
+
+header p {
+  font-size: 3em;
+  font-family: Caveat, sans-serif;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+article p{
+    margin-left: auto;
+}
+
+ blockquote, footer p{
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+
+/* 
+--------------------------
+Picture and caption style
+--------------------------
+*/
+#img-div {
+  background: hsla(0,0%,100%,0.5);
+  margin: 0 -1em;
+  padding: 2em 2em 0;
+}
+
+#img-div img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+figcaption {
+  padding-right: 2px;
+  font-size: 0.8em;
+  text-align: right;
+  line-height: 2rem;
+  color: #444;
+}
+
+
+/* 
+--------------------------
+article style
+--------------------------
+*/
+
+article {
+  margin-top: 2em;  
+}
+
+
+
+/* 
+--------------------------
+quote style
+--------------------------
+*/
+
+blockquote {
+  width: 360px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+blockquote p{
+  
+  margin: 0;
+  font-family: Crimson Text, Serif;
+  font-size: 1.4em;
+  color: #555;
+}
+
+blockquote p:first-child {
+  position: relative;  
+}
+
+blockquote p:first-child::before {
+  position: absolute;
+  right: calc(100% + 0.05em);
+  bottom: -0.5em;
+  font-family: Georgia, serif;
+  font-size: 6rem;
+  content: "\201C";
+  color: #888;
+  background: ;
+}
+
+blockquote cite {
+  display: block;
+  position: relative;
+  margin-top: 0.5em;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.9em;
+  color: #555;
+}
+
+blockquote cite::after {
+  position: absolute;
+  left: calc(100% + 0.03em);
+  top: -0.06em;
+  font-family: Georgia, serif;
+  font-size: 6rem;
+  content: "\201D";
+  color: #888;
+  
+}
+
+cite::before {
+  content: "– ";
+}
+
+
+@media (max-width: 860px) {
+  body {
+    margin: 0;
+    
+  }
+  
+  #img-div {
+    padding: .5em .5em 0;
+  }
+
+  
+}
+
+@media (max-width: 520px) {
+  body {
+    padding-bottom: 0;
+  }
+  
+  h1 {
+    font-size: 2.6em;
+  }
+  
+  header p {
+    font-size: 1.4em;
+  }
+    
+    
