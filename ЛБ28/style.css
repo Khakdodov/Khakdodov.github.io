@@ -1,0 +1,64 @@
+body, html {
+  background-image: url("2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+ 
+h2 {
+  font-size: 30px;
+  
+}
+
+h6 {
+  font-size: 21px;
+padding-top: 0px;
+}
+
+p {
+  font-size: 20px;
+  color: red;
+}
+
+.center-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 40px 35px 40px  ;
+  max-width: 484px;
+  height: auto;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.avatar {
+  background-image: url("1.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid darkgrey;
+  margin: auto;
+}
+
+.description {
+  font-family: serif;
+  color: #313f47;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+
+
+.footer_img{
+    width: 50%;
+}
+
