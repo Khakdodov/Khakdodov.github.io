@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="calc">
+        <label for="options">Выберите действие</label>
+        <select name="options" id="options">
+            <option value="+">Сложение</option>
+            <option value="-">Вычитание</option>
+            <option value="*">Умножение</option>
+            <option value="/">Деление</option>
+        </select>
+        <input type="number" id="firstNumber">
+        <input type="number" id="secondNumber">
+        <button id="btn">Рассчитать</button>
+        <span id="answer">Ответ: </span>
+
+    </div>
+
+    <script src="./scripts/kalkulator.js"></script>
+</body>
+</html>
